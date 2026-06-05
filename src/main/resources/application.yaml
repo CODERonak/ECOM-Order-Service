@@ -34,3 +34,10 @@ spring:
     user:
       name: boot
       password: spring
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_URL}      
