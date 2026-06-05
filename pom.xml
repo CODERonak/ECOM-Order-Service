@@ -76,12 +76,7 @@
 
 		<dependency>
 			<groupId>com.google.cloud</groupId>
-			<artifactId>spring-cloud-gcp-starter-pubsub</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>com.google.cloud</groupId>
-			<artifactId>spring-cloud-gcp-starter-storage</artifactId>
+			<artifactId>spring-cloud-gcp-starter-sql-postgresql</artifactId>
 		</dependency>
 
 		<dependency>
