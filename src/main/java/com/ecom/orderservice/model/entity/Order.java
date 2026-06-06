@@ -36,6 +36,8 @@ public class Order {
     @Column(precision = 19, scale = 2)
     private BigDecimal totalPrice;
 
+    @Enumerated(EnumType.STRING)
+    @Column(name = "status", nullable = false)
     private OrderStatus status;
 
     private Instant createdAt;
