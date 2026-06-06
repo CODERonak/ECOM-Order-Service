@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 public interface ProductClient {
 
     @GetMapping("/api/products/{id}")
-    ProductResponse getProduct(@PathVariable("id") String id);
+    ProductResponse getProductById(@PathVariable("id") String id);
 
     @PostMapping("/api/products/deduct-stock")
     Boolean deductStock(@RequestBody StockDeductRequest req);
