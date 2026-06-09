@@ -5,7 +5,7 @@ import com.ecom.orderservice.dto.StockDeductRequest;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
-@FeignClient(name = "product-service")
+@FeignClient(name = "product-service", url = "${product.service.url}")
 public interface ProductClient {
 
     @GetMapping("/api/products/{id}")

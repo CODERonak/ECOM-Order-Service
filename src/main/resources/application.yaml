@@ -33,11 +33,18 @@ spring:
   security:
     user:
       name: boot
-      password: spring
+      password: spring     
 
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_SERVER_URL}      
+# Deployed services url
+user:
+  service:
+    url: ${ECOM_USER_SERVICE_URL}
+
+product:
+  service:
+    url: ${ECOM_PRODUCT_SERVICE_URL}
+
+notification:
+  service:
+    url: ${ECOM_NOTIFICATION_SERVICE_URL}    
+
